@@ -19,21 +19,4 @@ This is a simple User Management project built using **Spring Boot**. It allows 
 - **Postman** for API testing
 
 ##  Project Structure
-springboot-user-management-api/
-├── .mvn/                       # Maven wrapper files
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/example/demo/
-│   │   │       ├── model/               # User model class
-│   │   │       ├── controller/          # UserController and WebController
-│   │   │       └── DemoApplication.java # Main Spring Boot app
-│   │   └── resources/
-│   │       ├── templates/               # users.html (Thymeleaf template)
-│   │       └── application.properties   # Config properties
-│   └── test/                            # Test classes (auto-generated)
-├── .gitignore
-├── mvnw / mvnw.cmd                     # Maven wrapper scripts
-├── pom.xml                             # Project dependencies and build config
-└── README.md
-
+<pre> ```plaintext springboot-user-management-api/ ├── .mvn/ # Maven wrapper ├── mvnw # Maven wrapper script (Linux/Mac) ├── mvnw.cmd # Maven wrapper script (Windows) ├── pom.xml # Maven project file ├── .gitignore ├── README.md ├── src/ │ ├── main/ │ │ ├── java/ │ │ │ └── com/example/demo/ │ │ │ ├── DemoApplication.java # Main class │ │ │ ├── model/User.java # User model │ │ │ └── controller/ │ │ │ ├── UserController.java # API controller │ │ │ └── WebController.java # Web view controller │ │ └── resources/ │ │ ├── templates/ │ │ │ └── users.html # Thymeleaf template │ │ └── application.properties # Spring Boot config │ │ └── test/ │ └── java/com/example/demo/ │ └── DemoApplicationTests.java ``` </pre>
