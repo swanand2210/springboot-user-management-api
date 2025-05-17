@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>All Users</title>
+    <script>
+        //async function can wait for things like data from the internet without stopping the whole program
+        async function getUsers() {
+            const response = await fetch("/users");
+            const users = await response.json();
+            const result = document.getElementById("result");
+            result.innerHTML = users.map(u => `<li>
+                ID: ${u.id} <br/>
+                Name: ${u.name} <br/>
+                Email: ${u.email}
+            </li><br/>`
+        ).join("");
+        }
+    </script>
+</head>
+<body>
+    <h1>Get All Users</h1>
+    <button onclick="getUsers()">Get Users</button>
+    <ul id="result"></ul>
+</body>
+</html>
