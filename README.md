@@ -19,4 +19,36 @@ This is a simple User Management project built using **Spring Boot**. It allows 
 - **Postman** for API testing
 
 ##  Project Structure
-<pre> <code> ``` springboot-user-management-api/ ├── .mvn/ # Maven wrapper ├── mvnw # Maven wrapper script (Linux/Mac) ├── mvnw.cmd # Maven wrapper script (Windows) ├── pom.xml # Project config ├── .gitignore ├── README.md ├── src/ │ ├── main/ │ │ ├── java/ │ │ │ └── com/example/demo/ │ │ │ ├── DemoApplication.java # Spring Boot main class │ │ │ ├── model/ │ │ │ │ └── User.java # User model │ │ │ └── controller/ │ │ │ ├── UserController.java # Handles JSON POST requests │ │ │ └── WebController.java # Renders HTML page │ │ └── resources/ │ │ ├── templates/ │ │ │ └── users.html # Thymeleaf HTML view │ │ └── application.properties # Config file │ │ └── test/ │ └── java/com/example/demo/ │ └── DemoApplicationTests.java # Unit tests ``` </code> </pre>
+## 📁 Project Structure
+
+```
+springboot-user-management-api/
+├── .mvn/                             # Maven wrapper folder
+│
+├── mvnw                              # Maven wrapper script (Linux/Mac)
+├── mvnw.cmd                          # Maven wrapper script (Windows)
+├── pom.xml                           # Maven configuration file
+├── .gitignore                        # Git ignore rules
+├── README.md                         # Project documentation
+│
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/example/demo/
+│   │   │       ├── DemoApplication.java       # Main Spring Boot app class
+│   │   │       ├── model/
+│   │   │       │   └── User.java              # User entity/model
+│   │   │       └── controller/
+│   │   │           ├── UserController.java    # API controller (handles JSON)
+│   │   │           └── WebController.java     # Web controller (renders UI)
+│   │   │
+│   │   └── resources/
+│   │       ├── templates/
+│   │       │   └── users.html                 # Thymeleaf HTML template
+│   │       └── application.properties         # App configuration
+│
+│   └── test/
+│       └── java/com/example/demo/
+│           └── DemoApplicationTests.java      # Unit test file
+```
+
